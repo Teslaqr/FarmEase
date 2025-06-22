@@ -13,7 +13,12 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+              {/* Logo Image - Replace with your actual logo path */}
+              <img 
+                src="/lo.png"  // Update this path to your logo
+                alt="Agri-Help Logo"
+                className="h-10 w-10"  // Adjust size as needed
+              />
               <span className="ml-3 text-white text-xl font-bold">Agri-Help</span>
             </Link>
           </div>
