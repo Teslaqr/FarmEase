@@ -7,5 +7,5 @@ module.exports = {
   SMTP_EMAIL: process.env.SMTP_EMAIL,
   SMTP_PASSWORD: process.env.SMTP_PASSWORD,
   FROM_EMAIL: process.env.FROM_EMAIL,
-  FROM_NAME: 'Agri-Help',
+  FROM_NAME: 'FarmEase',
 };

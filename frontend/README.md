@@ -66,19 +66,19 @@ In many regions, expensive farming equipment remains unused during non-seasonal 
 **Frontend:**
 
 * React / Vite
-* Tailwind CSS / ShadCN
+* Tailwind CSS
 * Axios
 
 **Backend:**
 
 * Node.js + Express.js
 * MongoDB
-* JWT + OTP with Twilio (or similar)
+* JWT + OTP 
 
 **Others:**
 
 * Socket.IO (for chat)
-* Cloudinary / AWS S3 (for image storage)
+
 
 ---
 
@@ -86,10 +86,10 @@ In many regions, expensive farming equipment remains unused during non-seasonal 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/agri-equip-renthub.git
+git clone https://github.com/Teslaqr/Farmease.git
 
 # Navigate into the project directory
-cd agri-equip-renthub
+cd Farmease
 
 # Install dependencies
 npm install
