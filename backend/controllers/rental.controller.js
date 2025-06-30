@@ -1,5 +1,5 @@
 // controllers/rental.controller.js
-import { RentalEquipment } from '../models/rental.model';
+import { RentalEquipment } from '../models/rental.model.js';
 import multer from 'multer';
 import path from 'path';
 

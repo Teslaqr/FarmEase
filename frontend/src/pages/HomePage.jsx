@@ -19,13 +19,13 @@ function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              to="/list-equipment" 
+              to="/sell" 
               className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition duration-300 transform hover:scale-105"
             >
               List Your Equipment
             </Link>
             <Link 
-              to="/browse" 
+              to="/ProductPage" 
               className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold rounded-lg transition duration-300 transform hover:scale-105"
             >
               Browse Equipment
@@ -210,7 +210,7 @@ function HomePage() {
           
           <div className="text-center mt-12">
             <Link 
-              to="/browse" 
+              to="/ProductPage" 
               className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition duration-300"
             >
               Browse All Equipment

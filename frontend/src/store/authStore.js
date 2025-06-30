@@ -18,7 +18,7 @@ export const useAuthStore = create((set) => ({
         try {
             const response = await axios.post(`${API_URL}/signup`, { email, password, name });
             set({ user: response.data.user, isAuthenticated: true, isLoading: false });
-            return response.data; // Return data to handle after signup
+            return response.data;
         } catch (error) {
             set({ error: error.response.data.message || "Error signing up", isLoading: false });
             throw error;
@@ -35,7 +35,7 @@ export const useAuthStore = create((set) => ({
                 error: null,
                 isLoading: false,
             });
-            return response.data; // Return data to handle after login
+            return response.data;
         } catch (error) {
             set({ error: error.response?.data?.message || "Error logging in", isLoading: false });
             throw error;
@@ -100,6 +100,37 @@ export const useAuthStore = create((set) => ({
                 error: error.response.data.message || "Error resetting password",
             });
             throw error;
+        }
+    },
+
+    getProfile: async () => {
+        set({ isLoading: true });
+        try {
+            const response = await axios.get(`${API_URL}/profile`);
+            set({ user: response.data.user, isLoading: false });
+            return response.data.user;
+        } catch (error) {
+            set({ error: "Failed to load profile", isLoading: false });
+        }
+    },
+
+    updateProfile: async (profileData) => {
+        set({ isLoading: true });
+        const formData = new FormData();
+        Object.keys(profileData).forEach((key) => {
+            formData.append(key, profileData[key]);
+        });
+
+        try {
+            const response = await axios.put(`${API_URL}/profile`, formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                },
+            });
+            set({ user: response.data.user, isLoading: false });
+            return response.data.user;
+        } catch (error) {
+            set({ error: "Failed to update profile", isLoading: false });
         }
     },
 }));
