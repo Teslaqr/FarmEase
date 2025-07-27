@@ -40,5 +40,5 @@ app.use("/api/rentals", rentalRoutes); // Updated endpoint
 // Connect to the database and start the server
 app.listen(PORT, () => {
     connectDB();
-    console.log("FarmSpace server is running on port", PORT);
+    console.log("FarmEase server is running on port", PORT);
 });

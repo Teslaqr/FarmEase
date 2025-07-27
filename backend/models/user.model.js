@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
     additionalFields: {
         type: Map,
         of: String,
-        default: {} // ✅ Ensure it initializes as empty
+        default: {}
     },
     resetPasswordToken: String,
     resetPasswordExpiresAt: Date,

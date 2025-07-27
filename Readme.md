@@ -1,12 +1,12 @@
-# 🌾 AgriEquip RentHub
+# 🌾 FarmEase RentHub
 
-A platform enabling farmers to **rent idle farming equipment** during the off-season, allowing owners to earn additional income while helping others access affordable tools. AgriEquip RentHub aggregates equipment listings and connects users through a seamless interface supported by call centers and real-time communication features.
+A platform enabling farmers to **rent idle farming equipment** during the off-season, allowing owners to earn additional income while helping others access affordable tools. FarmEase RentHub aggregates equipment listings and connects users through a seamless interface supported by call centers and real-time communication features.
 
 ---
 
 ## 🐼 Problem Statement
 
-In many regions, expensive farming equipment remains unused during non-seasonal periods, resulting in wasted resources and missed income opportunities. To address this, **AgriEquip RentHub** offers a centralized solution that allows farmers to:
+In many regions, expensive farming equipment remains unused during non-seasonal periods, resulting in wasted resources and missed income opportunities. To address this, **FarmEase RentHub** offers a centralized solution that allows farmers to:
 
 * **List unused equipment for rent**
 * **Search, filter, and book equipment**
