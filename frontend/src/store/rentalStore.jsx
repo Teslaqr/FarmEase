@@ -1,6 +1,9 @@
 // src/store/rentalStore.jsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
-
+const API_URL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:5000/api/rentals"
+    : `${import.meta.env.VITE_API_URL}/api/rentals`;
 const RentalContext = createContext();
 
 export const RentalProvider = ({ children }) => {
@@ -9,7 +12,7 @@ export const RentalProvider = ({ children }) => {
   // Fetch rentals from the database
   const fetchRentals = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/rentals');
+      const res = await fetch(API_URL);
       if (res.ok) {
         const data = await res.json();
         setRentals(data.rentals || data); // Handle both response formats

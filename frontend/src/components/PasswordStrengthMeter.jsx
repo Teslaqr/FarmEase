@@ -7,7 +7,7 @@
 // 		{ label: "Contains lowercase letter", met: /[a-z]/.test(password) },
 // 		{ label: "Contains a number", met: /\d/.test(password) },
 // 		{ label: "Contains special character", met: /[^A-Za-z0-9]/.test(password) },
-// 	];
+// 	];  
 
 // 	return (
 // 		<div className='mt-2 space-y-1'>
@@ -19,7 +19,7 @@
 // 						<X className='size-4 text-gray-500 mr-2' />
 // 					)}
 // 					<span className={item.met ? "text-green-500" : "text-gray-400"}>{item.label}</span>
-// 				</div>
+// 				</div> 
 // 			))}
 // 		</div>
 // 	);
