@@ -4,10 +4,10 @@
   "description": "",
   "main": "backend/index.js",
   "scripts": {
-  "dev": "nodemon backend/index.js",
-  "start": "node backend/index.js"
-}
-,
+    "dev": "nodemon ./backend/index.js",
+    "start": "node ./backend/index.js",
+    "build": "cd frontend && npm install && npm run build"
+  },
   "keywords": [],
   "author": "",
   "type": "module",
